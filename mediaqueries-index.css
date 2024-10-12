@@ -1,0 +1,54 @@
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .header-container {
+        flex-direction: column; /* Stack logo and nav on smaller screens */
+        align-items: flex-start; /* Align items to start */
+    }
+
+    .nav-links {
+        margin-left: 0; /* Remove left margin on smaller screens */
+        padding-left: 0; /* Reset padding */
+        padding-right: 0; /* Reset padding */
+    }
+
+    .text-content {
+        max-width: 100%; /* Full width for smaller screens */
+        margin-left: 0; /* Reset left margin */
+        text-align: center; /* Center text */
+    }
+
+    .image-content {
+        flex: 0 0 100%; /* Full width for images */
+        justify-content: center; /* Center images */
+    }
+
+    .image-content img {
+        width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Adjust the size of the button for smaller screens */
+    .cta-button {
+        padding: 10px 25px; /* Adjust button padding */
+        font-size: 14px; /* Adjust button font size */
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column; /* Stack nav items vertically */
+        gap: 10px; /* Adjust spacing */
+    }
+
+    .text-content {
+        padding: 0 20px; /* Add some padding */
+    }
+
+    .how-text h1 {
+        font-size: 50px; /* Smaller font size for h1 */
+    }
+
+    .how-paragraph p {
+        font-size: 24px; /* Smaller font size for paragraphs */
+    }
+}
